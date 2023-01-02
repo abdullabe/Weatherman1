@@ -15,9 +15,6 @@ Button login_btn_submit;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-        init();
-    }
-    private void init(){
         login_btn_submit=(Button)findViewById(R.id.login_btn_submit);
         login_btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,5 +23,6 @@ Button login_btn_submit;
                 startActivity(i);
             }
         });
+
     }
 }
